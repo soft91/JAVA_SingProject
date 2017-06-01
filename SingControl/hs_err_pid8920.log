@@ -1,0 +1,120 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (virtualspace.cpp:125), pid=8920, tid=8656
+#  fatal error: os::release_memory failed
+#
+# JRE version:  (7.0_71-b14) (build )
+# Java VM: Java HotSpot(TM) Client VM (24.71-b01 mixed mode windows-x86 )
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x01ccc000):  JavaThread "Unknown thread" [_thread_in_vm, id=8656, stack(0x006b0000,0x00700000)]
+
+Stack: [0x006b0000,0x00700000],  sp=0x006ff2f8,  free space=316k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x1911e4]
+V  [jvm.dll+0x18ae66]
+V  [jvm.dll+0x166efc]
+V  [jvm.dll+0x1673bb]
+V  [jvm.dll+0x8acf6]
+V  [jvm.dll+0x887c6]
+V  [jvm.dll+0x8750e]
+V  [jvm.dll+0x918c3]
+V  [jvm.dll+0x1407f4]
+V  [jvm.dll+0x16341c]
+V  [jvm.dll+0xca7bf]
+C  [javaw.exe+0x13ce]
+C  [javaw.exe+0x1e40]
+C  [javaw.exe+0xa601]
+C  [javaw.exe+0xa68b]
+C  [kernel32.dll+0x4ee1c]
+C  [ntdll.dll+0x637eb]
+C  [ntdll.dll+0x637be]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x01ccc000 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=8656, stack(0x006b0000,0x00700000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x008b0000 - 0x008df000 	C:\Program Files\Java\jre7\bin\javaw.exe
+0x77010000 - 0x7714c000 	C:\Windows\SYSTEM32\ntdll.dll
+0x755a0000 - 0x75674000 	C:\Windows\system32\kernel32.dll
+0x75260000 - 0x752ab000 	C:\Windows\system32\KERNELBASE.dll
+0x76030000 - 0x760d0000 	C:\Windows\system32\ADVAPI32.dll
+0x75b00000 - 0x75bac000 	C:\Windows\system32\msvcrt.dll
+0x75770000 - 0x75789000 	C:\Windows\SYSTEM32\sechost.dll
+0x75680000 - 0x75722000 	C:\Windows\system32\RPCRT4.dll
+0x75c50000 - 0x75d19000 	C:\Windows\system32\USER32.dll
+0x77190000 - 0x771de000 	C:\Windows\system32\GDI32.dll
+0x75760000 - 0x7576a000 	C:\Windows\system32\LPK.dll
+0x75790000 - 0x7582d000 	C:\Windows\system32\USP10.dll
+0x73f20000 - 0x740be000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_41e6975e2bd6f2b2\COMCTL32.dll
+0x760f0000 - 0x76147000 	C:\Windows\system32\SHLWAPI.dll
+0x760d0000 - 0x760ef000 	C:\Windows\system32\IMM32.DLL
+0x75480000 - 0x7554c000 	C:\Windows\system32\MSCTF.dll
+0x5c620000 - 0x5c6df000 	C:\Program Files\Java\jre7\bin\msvcr100.dll
+0x5c160000 - 0x5c4e9000 	C:\Program Files\Java\jre7\bin\client\jvm.dll
+0x71410000 - 0x71417000 	C:\Windows\system32\WSOCK32.dll
+0x77150000 - 0x77185000 	C:\Windows\system32\WS2_32.dll
+0x75c40000 - 0x75c46000 	C:\Windows\system32\NSI.dll
+0x733a0000 - 0x733d2000 	C:\Windows\system32\WINMM.dll
+0x75bb0000 - 0x75bb5000 	C:\Windows\system32\PSAPI.DLL
+0x6dfd0000 - 0x6dfdc000 	C:\Program Files\Java\jre7\bin\verify.dll
+0x5c140000 - 0x5c160000 	C:\Program Files\Java\jre7\bin\java.dll
+0x5cbd0000 - 0x5cbe3000 	C:\Program Files\Java\jre7\bin\zip.dll
+0x70920000 - 0x70a0b000 	C:\Windows\system32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=MS949 
+java_command: SingCompany.SingCompanyMain
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:/Program Files/Java/jre7/bin/client;C:/Program Files/Java/jre7/bin;C:/Program Files/Java/jre7/lib/i386;E:\app\16\product\11.2.0\dbhome_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\JAVA7\bin;H:\Java\Java_32bit\eclipse;
+USERNAME=16
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 6 Model 23 Stepping 10, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 Build 7601 Service Pack 1
+
+CPU:total 2 (2 cores per cpu, 1 threads per core) family 6 model 23 stepping 10, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, tsc
+
+Memory: 4k page, physical 2087224k(121564k free), swap 6280504k(20504k free)
+
+vm_info: Java HotSpot(TM) Client VM (24.71-b01) for windows-x86 JRE (1.7.0_71-b14), built on Sep 26 2014 16:30:49 by "java_re" with unknown MS VC++:1600
+
+time: Fri Nov 14 14:30:00 2014
+elapsed time: 0 seconds
+
